@@ -47,7 +47,7 @@ where $W(1) = 1$.
 - [ ] 3. (2 point) Now implement `work_calc`, which generalizes the above so that we can now input $a$, $b$ and a *function* $f(n)$ as arguments. Test this code by completing the test cases in `test_work` and adding 3 more cases.#done
 
 - [ ] 4. (2 point) Now, derive the asymptotic behavior of $W(n)$ using $f(n) = 1$, $f(n) = n**2$ and $f(n) = n$. Then, generate actual values for $W(n)$ for your code and confirm that the trends match your derivations.
-   W(n) for when f(n)=1 is W(n)=n. W(n) for when f(n) = n^2 is W(n)=n^2. W(n) for when f(n) = n is W(n)=nlogn. The trends match our derivations. There's a linear growth trend for f(n)=1 , f(n)= n has growth that increases more, and f(n)=n^2 is a quadratic growth. Our work is in work.pdf.
+   W(n) for when f(n)=1 is W(n)=n. W(n) for when f(n) = n^2 is W(n)=n^2. W(n) for when f(n) = n is W(n)=nlogn. The trends match our derivations. There's a linear growth trend for f(n)=1 , f(n)= n has growth that increases more, and f(n)=n^2 is a quadratic growth. Our work is ong page 2 and 3 in work.pdf.
   
 (Empirical evidence shown below)
               n          n^2
@@ -73,7 +73,7 @@ where $W(1) = 1$.
 
 - [ ] 5. (4 points) Now that you have a nice way to empirically generate valuess of $W(n)$, we can look at the relationship between $a$, $b$, and $f(n)$. Suppose that $f(n) = n^c$. What is the asypmptotic behavior of $W(n)$ if $c < \log_b a$? What about $c > \log_b a$? And if they are equal? Modify `compare_work` to compare empirical values for different work functions (at several different values of $n$) 
 - 
-  Let's assume b = 2 and a = 4, thus log_2 of 4 will equal 2. If c < 2, equaling 1, then the asymptotic behavior will be O(n lg n) because the work of a function with an n constant is O(n lg n). If c == 0, then the asymptotic behavior will be O(n) because n^0 is 1 and a function with a 1 constant is O(n) work. If c > 2, then let's assume it's 3. Then the asymptotic behavior of c == 3 is O(n^3) because a function with an n^3 constant has asymptotic behavior of n^3. If c == 2 (when c == log_b a) then the asymptotic behavior is O(n^2) because a function with an n^2 constant is O(n^2). These asymptotic behaviors match with our empirical evidence because when graphed they have the same numerical value.
+  Let's assume b = 2 and a = 4, thus log_2 of 4 will equal 2. If c < 2, equaling 1, then the asymptotic behavior will be O(n lg n) because the work of a function with an n constant is O(n lg n). If c == 0, then the asymptotic behavior will be O(n) because n^0 is 1 and a function with a 1 constant is O(n) work. If c > 2, then let's assume it's 3. Then the asymptotic behavior of c == 3 is O(n^3) because a function with an n^3 constant has asymptotic behavior of n^3. If c == 2 (when c == log_b a) then the asymptotic behavior is O(n^2) because a function with an n^2 constant is O(n^2). These asymptotic behaviors match with our empirical evidence because when graphed they have the same numerical value. Work is on page 1 in work.pdf for n^3.
 (As shown below)
                 n^0        n^1
       n |      W_1 |       W_2 |
